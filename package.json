@@ -1,0 +1,49 @@
+{
+  "name": "react-check",
+  "version": "1.0.0",
+  "description": "Stateless and easily stylable checkbox component for react",
+  "main": "dist/react-checkbox.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build:less && npm run build:js",
+    "build:js": "./node_modules/.bin/babel index.js > dist/react-checkbox.js",
+    "build:less": "./node_modules/.bin/lessc build.less > dist/react-checkbox.css",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jrf0110/react-checkbox.git"
+  },
+  "keywords": [
+    "react",
+    "checkbox",
+    "stylable",
+    "stateless"
+  ],
+  "author": "John Fawcett",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jrf0110/react-checkbox/issues"
+  },
+  "homepage": "https://github.com/jrf0110/react-checkbox",
+  "devDependencies": {
+    "babel-cli": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "less": "^2.5.3",
+    "node-sass": "^3.4.2"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ]
+  },
+  "peerDependencies": {
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3"
+  }
+}
