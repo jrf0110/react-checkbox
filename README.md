@@ -5,7 +5,7 @@
 __install__
 
 ```bash
-npm install -S react-check
+npm install -S react-checkbox2
 ```
 
 __usage__
