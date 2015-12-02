@@ -14,7 +14,7 @@
     "prepublish": "npm run build"
   },
   "files": [
-    "dist/*",
+    "dist/",
     "index.*"
   ],
   "repository": {
