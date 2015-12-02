@@ -13,6 +13,10 @@
     "build:less": "./node_modules/.bin/lessc build.less > dist/react-checkbox.css",
     "prepublish": "npm run build"
   },
+  "files": [
+    "dist/*",
+    "index.*"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/jrf0110/react-checkbox.git"
