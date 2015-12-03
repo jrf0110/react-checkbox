@@ -4,13 +4,14 @@ import ReactDOM from 'react-dom';
 export default React.createClass({
   getDefaultProps: function(){
     return {
-      onChange: function( checked, value ){}
+      className: 'checkbox-wrapper'
+    , onChange: function( checked, value ){}
     }
   }
 
 , render: function(){
     return (
-      <div className="checkbox-wrapper">
+      <div className={this.props.className}>
         {this.props.children}
         <input id={this.props.id}
           type="checkbox"
