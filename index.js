@@ -12,7 +12,6 @@ export default React.createClass({
 , render: function(){
     return (
       <div className={this.props.className}>
-        {this.props.children}
         <input id={this.props.id}
           type="checkbox"
           ref="inputEl"
@@ -25,7 +24,10 @@ export default React.createClass({
           className="checkbox-facade"
           onClick={this.onClick}
           onKeyPress={this.onKeyPress}
-          onKeyUp={this.onWrapperText}></div>
+          onKeyUp={this.onWrapperText}
+        >
+          {this.props.children}
+        </div>
       </div>
     );
   }
