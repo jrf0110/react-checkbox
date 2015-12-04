@@ -1,6 +1,6 @@
 {
   "name": "react-checkbox2",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Stateless and easily stylable checkbox component for react",
   "main": "dist/react-checkbox.js",
   "directories": {
