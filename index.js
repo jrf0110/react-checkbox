@@ -24,10 +24,8 @@ export default React.createClass({
           className="checkbox-facade"
           onClick={this.onClick}
           onKeyPress={this.onKeyPress}
-          onKeyUp={this.onWrapperText}
-        >
-          {this.props.children}
-        </div>
+          onKeyUp={this.onWrapperText} />
+        {this.props.children}
       </div>
     );
   }
